@@ -1,0 +1,409 @@
+
+
+@keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+  
+  .FirstComicsPage {
+    /* max-width: 68%; */
+    width: 68%;
+    height: 230vh;
+    
+    margin: 0 auto;
+    margin-top: 70px;
+    padding: 0 1.25rem;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-width: 0px;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  * {
+    -ms-overflow-style: none;
+  }
+  
+  .ol_form,.form {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 221vh;
+  }
+  
+  .carousel {
+    position: relative;
+    padding-top: 75%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+  }
+  
+  .carousel__viewport {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow-x: scroll;
+    /* counter-reset: item; */
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel__slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    
+    /* counter-increment: item; */
+  }
+  
+  .carousel__slide:before {
+    /* content: counter(item); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+  }
+  
+  .carousel__snapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+  }
+  
+  .page1 {
+      background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/000.jpg');
+  }
+  .page2 {
+      background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/001.jpg');
+  }
+  .page3 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/002.jpg');
+}
+.page4 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/003.jpg');
+}
+.page5 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/004.jpg');
+}
+.page6 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/005.jpg');
+}
+.page7 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/006.jpg');
+}
+.page8 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/007.jpg');
+}
+.page9 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/008.jpg');
+}
+.page10 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Amazing-Fantasy/tales-of-suspense/tales-of-suspense-059/009.jpg');
+}
+
+
+
+
+
+
+
+
+/*TODO Second Comics */
+
+.ol_form-2,.form-2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 186vh;
+}
+
+.page1-2 {
+    background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/000.jpg');
+}
+.page2-2 {
+    background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/001.jpg');
+}
+.page3-2 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/002.jpg');
+}
+.page4-2 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/003.jpg');
+}
+.page5-2 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/004.jpg');
+}
+.page6-2 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/005.jpg');
+}
+.page7-2 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/006.jpg');
+}
+.page8-2 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/007.jpg');
+}
+.page9-2 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/008.jpg');
+}
+.page10-2 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Harley-Quinn/harleen/harleen-001/009.jpg');
+}
+
+/* TODO Three Comics */
+
+.page1-3 {
+    background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/000.jpg');
+}
+.page2-3 {
+    background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/001.jpg');
+}
+.page3-3 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/002.jpg');
+}
+.page4-3 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/003.jpg');
+}
+.page5-3 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/004.jpg');
+}
+.page6-3 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/005.jpg');
+}
+.page7-3 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/006.jpg');
+}
+.page8-3 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/007.jpg');
+}
+.page9-3 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/008.jpg');
+}
+.page10-3 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/shazam/shazam-v3/shazam-v3-001/009.jpg');
+}
+
+/* TODO FOUR Comics */
+
+.page1-4 {
+    background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/000.jpg');
+}
+.page2-4 {
+    background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/001.jpg');
+}
+.page3-4 {
+  background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/002.jpg');
+}
+.page4-4 {
+  background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/003.jpg');
+}
+.page5-4 {
+  background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/004.jpg');
+}
+.page6-4 {
+  background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/005.jpg');
+}
+.page7-4 {
+  background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/006.jpg');
+}
+.page8-4 {
+  background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/007.jpg');
+}
+.page9-4 {
+  background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/008.jpg');
+}
+.page10-4 {
+  background: url('http://img.drawnstories.ru/img/Valiant/Bloodshot/Bloodshot/Bloodshot-011/009.jpg');
+}
+
+/* five */
+
+.page1-5 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/000.jpg');
+}
+.page2-5 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/001.jpg');
+}
+.page3-5 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/002.jpg');
+}
+.page4-5 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/003.jpg');
+}
+.page5-5 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/004.jpg');
+}
+.page6-5 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/005.jpg');
+}
+.page7-5 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/006.jpg');
+}
+.page8-5 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/007.jpg');
+}
+.page9-5 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/008.jpg');
+}
+.page10-5 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/Marvel-Zombies/morbius-the-living-vampire-v2/morbius-the-living-vampire-v2-003/009.jpg');
+}
+
+/* six */
+
+.page1-6 {
+    background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/000.jpg');
+}
+.page2-6 {
+    background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/001.jpg');
+}
+.page3-6 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/002.jpg');
+}
+.page4-6 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/003.jpg');
+}
+.page5-6 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/004.jpg');
+}
+.page6-6 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/005.jpg');
+}
+.page7-6 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/006.jpg');
+}
+.page8-6 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/007.jpg');
+}
+.page9-6 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/008.jpg');
+}
+.page10-6 {
+  background: url('http://img.drawnstories.ru/img/DC-Comics/Final-Crisis/rogues-revenge/rogues-revenge-002/009.jpg');
+}
+
+/* 7 */
+
+.page1-7 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/000.jpg');
+}
+.page2-7 {
+    background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/001.jpg');
+}
+.page3-7 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/002.jpg');
+}
+.page4-7 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/003.jpg');
+}
+.page5-7 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/004.jpg');
+}
+.page6-7 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/005.jpg');
+}
+.page7-7 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/006.jpg');
+}
+.page8-7 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/007.jpg');
+}
+.page9-7 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/008.jpg');
+}
+.page10-7 {
+  background: url('http://img.drawnstories.ru/img/Marvel-Comics/StarWars/rogue-one-cassian-and-k2so/rogue-one-cassian-and-k2so-001/009.jpg');
+}
+
+/* 8 */
+
+.page1-8 {
+    background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/000.jpg');
+}
+.page2-8 {
+    background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/001.jpg');
+}
+.page3-8 {
+  background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/002.jpg');
+}
+.page4-8 {
+  background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/003.jpg');
+}
+.page5-8 {
+  background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/004.jpg');
+}
+.page6-8 {
+  background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/005.jpg');
+}
+.page7-8 {
+  background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/006.jpg');
+}
+.page8-8 {
+  background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/007.jpg');
+}
+.page9-8 {
+  background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/008.jpg');
+}
+.page10-8 {
+  background: url('http://img.drawnstories.ru/img/image-comics/fire-power/fire-power-001/009.jpg');
+}
+
+  @media (hover: hover) {
+    .carousel__snapper {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+  
+    .carousel__slide:last-child .carousel__snapper {
+      animation-name: tostart, snap;
+    }
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .carousel__snapper {
+      animation-name: none;
+    }
+  }
+  
+
+  
+ 
+  
+  
+  
+  
+  
+  

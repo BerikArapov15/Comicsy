@@ -1,0 +1,9 @@
+
+.sectionPage { 
+    background: url("https://www.odindesignthemes.com/theBebop/comic/images/news-city.png");
+    min-height: 120vh;
+    
+    width: 85%;
+    /* margin-left: 5px; */
+    background-repeat: no-repeat;
+}

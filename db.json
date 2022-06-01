@@ -1,0 +1,55 @@
+{
+  "products": [
+    {
+      "name": "",
+      "description": "",
+      "price": 0,
+      "picture": "",
+      "type": "",
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 18
+    },
+    {
+      "name": "dawdwa",
+      "description": "dawda",
+      "price": null,
+      "picture": "dawda",
+      "type": "dwad",
+      "id": 19
+    },
+    {
+      "name": "",
+      "description": "NFT",
+      "price": 0,
+      "picture": "",
+      "type": "",
+      "id": 20
+    }
+  ]
+}
